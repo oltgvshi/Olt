@@ -19,6 +19,7 @@ body{
     color: #3A395E;
     transition: 0.7s ease;
     z-index: 2;
+    text-align: center;
 }
 
 ul li{
