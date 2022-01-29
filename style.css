@@ -1,0 +1,443 @@
+/*---Menu---*/
+@import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/plus-jakarta-display.min.css");
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Plus Jakarta Display', sans-serif;
+    overflow-x: hidden;
+}
+
+/*---Menu---*/
+.menu{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3A395E;
+    transition: 0.7s ease;
+    z-index: 2;
+}
+
+ul li{
+    padding: 10px 25px;
+    margin: 0px 25px;
+    transition: 0.5s ease;
+    border-radius: 15px;
+    display: inline;
+}
+
+ul li:hover{
+    color: #7051EF;
+    cursor: pointer;
+    transition: 0.5s ease;
+    background-color: #f7f6ff;
+}
+
+ul a:link, ul a:visited, ul a:active{
+    text-decoration: none;
+    color: #3A395E;
+}
+
+.openMenu{
+    font-size: 24px;
+    color: #3A395E;
+    transition: 0.5s ease;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    display: none;
+}
+
+.openMenu:hover{
+    color: #7051EF;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.closeMenu{
+    font-size: 24px;
+    color: white;
+    transition: 0.5s ease;
+    position: absolute;
+    top: 25px;
+    left: 49%;
+    display: none;
+}
+
+.closeMenu:hover{
+    color: #f7f6ff;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+/*---About Me---*/
+#aboutMe{
+    padding: 170px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3A395E;
+}
+
+.info, .logo{
+    padding: 0px 100px;
+}
+
+#logo{
+    width: 320px;
+    height: 320px;
+    border-radius: 100%;
+    border: solid 20px #7051EF;
+}
+
+.olt{
+    font-size: 60px;
+}
+
+.front{
+    font-size: 24px;
+    color: #7051EF;
+}
+
+.aboutText{
+    font-size: 16px;
+    width: 400px;
+}
+
+.contact, .resume{
+    width: 185px;
+    background-color: #7051EF;
+    color: white;
+    border-radius: 15px;
+    padding: 15px 0px;
+    font-size: 16px;
+    border: 0px;
+    transition: 0.5s ease;
+    margin-top: 15px;
+}
+
+.contact:hover, .resume:hover{
+    cursor: pointer;
+    background-color: #f7f6ff;
+    color: #7051EF;
+    transition: 0.5s ease;
+}
+
+.front, .olt, .aboutText{
+    padding: 10px 0px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---Services---*/
+#services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+}
+
+.divider{
+    width: 100px;
+    height: 6px;
+    background-color: #7051EF;
+}
+
+.sectionTitle{
+    font-size: 48px;
+    color: #3A395E;
+    padding: 10px 0px;
+}
+
+.servicesCard{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0px;
+}
+
+.card{
+    background-color: #f7f6ff;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px;
+}
+
+.cardText{
+    font-size: 16px;
+    width: 250px;
+    color: #3A395E;
+    padding: 10px 0px;
+}   
+
+.cardImg{
+    width: 85px;
+    height: 85px;
+    border-radius: 100px;
+    background-color: #7051EF;
+    margin: 10px 0px;
+}
+
+/*---Projects---*/
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    flex-direction: column;
+}
+
+.projectsCard{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 70px 0px;
+}
+
+div a:link, div a:visited, div a:active{
+    text-decoration: none;
+    color: #3A395E;
+}
+
+.logofolio{
+    width: 100%;
+    transition: 0.5 ease;
+}
+
+.logofolio:hover{
+    opacity: 50px;
+}
+
+.projCard{
+    background-color: #f7f6ff;
+    border-radius: 15px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin: 30px;
+}
+
+.projectImg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    opacity: 100%;
+    transition:0.5s ease;
+}
+
+.projectImg:hover{
+    opacity: 5%;
+    transition:0.5s ease;
+}
+
+/*---Contact---*/
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+    flex-direction: column;
+}
+
+.contactForm{
+    display: flex;
+}
+
+.fa-phone, .fa-envelope, .fa-map-marker-alt{
+    color: #7051EF;
+    font-size: 24px;
+    padding: 0px 20px;
+    width: 24px;
+}
+
+.numri, .mailTo, .map{
+    transition: 0.5s ease;
+}
+
+.numri:hover, .mailTo:hover, .map:hover{
+    color: #7051EF;
+    transition: 0.5s ease;
+}
+
+.location, .phone, .email{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.info{
+    padding: 90px;
+}
+
+.forma{
+    display: flex;
+    flex-direction: column;
+    padding: 90px 0px 100px 0px;
+    align-items: center;
+}
+
+.formInput{
+    padding: 15px;
+    width: 400px;
+    background-color: #f7f6ff;
+    border-radius: 15px;
+    font-size: 16px;
+    margin: 10px 0px;
+    color: #3A395E;
+    border: 0px;
+    border: 2px solid #f7f6ff;
+}
+
+.formInput::placeholder{
+    color: #7051EF;
+    opacity: 60%;
+}
+
+.formInput:focus{
+    border: 2px solid #7051EF;
+    outline: none;
+}
+
+#texti{
+    resize: none;
+    height: 150px;
+}
+
+.submitButtoni{
+    width: 400px;
+    background-color: #7051EF;
+    color: white;
+    border-radius: 15px;
+    padding: 15px 0px;
+    font-size: 16px;
+    border: 0px;
+    transition: 0.5s ease;
+    margin-top: 15px;
+}
+
+.submitButtoni:hover{
+    cursor: pointer;
+    background-color: #f7f6ff;
+    color: #7051EF;
+    transition: 0.5s ease;
+}
+
+/*---Footer---*/
+footer{
+    background-color: #f7f6ff;
+    display: flex;
+    align-items: center;
+    height: 150px;
+    justify-content: space-between;
+}
+
+.logoFooter{
+    height: 80px;
+    padding: 0px 50px;
+}
+
+.icons{
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+#telegram, #instagram, #facebook{
+    transition: 0.5s ease;
+    padding: 0px 10px;
+}
+
+
+#telegram:hover, #instagram:hover, #facebook:hover{
+    color: #7051EF;
+    transition: 0.5s ease;
+}
+
+/*---Responsive---*/
+
+@media only screen and (max-width: 1080px) {
+    #aboutMe{
+        flex-direction: column;
+    }
+
+    #logo{
+        width: 250px;
+        height: 250px;
+    }
+
+    .info{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    .contactForm{
+        flex-direction: column;
+    }
+
+    .forma{
+        padding-top: 30px;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 20px 0px 30px 0px;
+    }
+
+    .formInput, .submitButtoni{
+        width: 300px;
+    }
+
+    ul li{
+        padding: 10px 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutText, .contact, .resume, .cardText, .info, .submitButtoni, .formInput, p{
+        font-size: 12px;
+    }
+
+    .menu{
+        background-color: #7051EF;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: -110%;
+    }
+
+    ul li{
+        display: block;
+        width: 90vw;
+        color: #f7f6ff;
+    }
+
+    ul{
+        padding-top: 45px;
+    }
+
+    .openMenu, .closeMenu{
+        display: block;
+    }
+
+}
